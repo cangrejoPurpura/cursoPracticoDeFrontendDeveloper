@@ -1,9 +1,9 @@
 :root {
      --white: #FFFFFF;
      --black: #000000;
-     --very-light-pink: #C7C7C7;
-     --text-input-field: #F7F7F7;
-     --hospital-green: #ACD982;
+     --very-light-pink: #1a1a1a;
+     --text-input-field: #e0dbdbf8;
+     --hospital-green: #8fbb67;
      --sm: 14px;
      --md: 16px;
      --lg: 18px;
@@ -26,6 +26,7 @@ body{
      display: grid;
      grid-template-rows: auto 1fr auto;
      width: 300px;
+     justify-items: center;
 }
 
 .logo {
@@ -48,6 +49,34 @@ body{
      margin-top: 0;
      margin-bottom: 32px;
      text-align: center;
+}
+
+.email-image {
+     width: 132px;
+     height: 132px;
+     border-radius: 50%;
+     background-color: var(--text-input-field);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 24px;
+}
+
+.email-image img {
+     width: 80px;
+}
+
+.resend {
+     font-size: var(--sm);
+}
+
+.resend span{
+     color: var(--very-light-pink);
+}
+
+.resend a {
+     color: var (--hospital-green);
+     text-decoration: none;
 }
 
 .primary-button{
